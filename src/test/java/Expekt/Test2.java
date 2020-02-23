@@ -29,19 +29,20 @@ public class Test2 {
     @DataProvider(name = "Registration")
     public Object[][] getData()
     {
-        Object[][] data=new Object[10][12];
+        Object[][] data=new Object[10][10];
+
         data[0][0]="ussSSS";
-        data[0][1]="pas  s11";
+        data[0][1]="pass11";
         data[0][2]="urerЫЫЫ1";
         data[0][3]="paЭЭЭЄЄЄЄss";
-        data[0][4]="";
-        data[0][5]="p    ass";
+        data[0][4]="lkkk";
+        data[0][5]="1233";
         data[0][6]="11";
-        data[0][7]="///";
-        data[0][8]="@2 dsa 11";
-        data[0][9]="das a1";
-        data[0][10]="pass";
-        data[0][11]="pgggass";
+        data[0][7]="sdfsdf";
+        data[0][8]="sdf";
+        data[0][9]="dasa1";
+
+
 
         data[1][0]="2123";
         data[1][1]="";
@@ -53,8 +54,7 @@ public class Test2 {
         data[1][7]="dasdas@bbb";
         data[1][8]="asdasdasd";
         data[1][9]="";
-        data[1][10]="pass";
-        data[1][11]="pgggass";
+
 
         data[2][0]="";
         data[2][1]="asd@gmal";
@@ -66,8 +66,8 @@ public class Test2 {
         data[2][7]="1321   ";
         data[2][8]="    ";
         data[2][9]="";
-        data[2][10]="@@@@";
-        data[2][11]="pgggass";
+
+
 
         data[3][0]="sdada";
         data[3][1]="adasd";
@@ -79,8 +79,7 @@ public class Test2 {
         data[3][7]="ыыыыыыыыыыыыыыыыыыыыы";
         data[3][8]="  1 ";
         data[3][9]="йуйцу";
-        data[3][10]="";
-        data[3][11]="pgggass";
+
 
         data[4][0]="";
         data[4][1]="";
@@ -92,8 +91,8 @@ public class Test2 {
         data[4][7]="pas2№№33s";
         data[4][8]="  ыва";
         data[4][9]="s";
-        data[4][10]="";
-        data[4][11]="pgggass";
+
+
 
         data[5][0]="1111";
         data[5][1]="ЫЫЫ";
@@ -105,8 +104,6 @@ public class Test2 {
         data[5][7]="asdasd";
         data[5][8]="p@@@@";
         data[5][9]=".....";
-        data[5][10]="ad11";
-        data[5][11]="pgggass";
 
         data[6][0]="urer1";
         data[6][1]="pass";
@@ -118,8 +115,6 @@ public class Test2 {
         data[6][7]="pass";
         data[6][8]="pass";
         data[6][9]="pass";
-        data[6][10]="pass";
-        data[6][11]="pgggass";
 
         data[7][0]="11";
         data[7][1]="pa3adsss";
@@ -131,8 +126,6 @@ public class Test2 {
         data[7][7]="2";
         data[7][8]="@#@$@";
         data[7][9]="psa";
-        data[7][10]="pass";
-        data[7][11]="pgggass";
 
         data[8][0]="urasdaser1";
         data[8][1]="pasasdass";
@@ -144,8 +137,6 @@ public class Test2 {
         data[8][7]="pa    ss";
         data[8][8]="paewress";
         data[8][9]="pas sdfs1231s";
-        data[8][10]="pajg ss";
-        data[8][11]="pgggass";
 
         data[9][0]="u1312rer1";
         data[9][1]="pas21 as";
@@ -157,16 +148,13 @@ public class Test2 {
         data[9][7]="pasas11s";
         data[9][8]="pas as   s";
         data[9][9]="pasd sdfss";
-        data[9][10]="paqweqwess";
-        data[9][11]="pgggass";
-
 
         return data;
     }
 
 
     @Test(dataProvider = "Registration")
-    public void login(String name,String sur, String addr, String add, String code, String town, String coun, String mob, String user, String pass, String mail, String conf)
+    public void login(String name,String sur, String addr, String code, String town, String mob, String user, String pass, String mail, String conf)
     {
         driver.get("https://en.expekt.com/register");
         driver.findElement(By.id("FirstName")).click();
@@ -175,14 +163,10 @@ public class Test2 {
         driver.findElement(By.id("Surname")).sendKeys(sur);
         driver.findElement(By.id("Address")).click();
         driver.findElement(By.id("Address")).sendKeys(addr);
-        driver.findElement(By.id("Additional address")).click();
-        driver.findElement(By.id("Additional address")).sendKeys(add);
         driver.findElement(By.id("Postcode")).click();
         driver.findElement(By.id("Postcode")).sendKeys(code);
         driver.findElement(By.id("Town")).click();
         driver.findElement(By.id("Town")).sendKeys(town);
-        driver.findElement(By.id("Country")).click();
-        driver.findElement(By.id("Country")).sendKeys(coun);
         driver.findElement(By.id("Mobile telephone number")).click();
         driver.findElement(By.id("Mobile telephone number")).sendKeys(mob);
         driver.findElement(By.id("Username")).click();
