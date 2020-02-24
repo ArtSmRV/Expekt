@@ -29,7 +29,7 @@ public class Test2 {
     @DataProvider(name = "Registration")
     public Object[][] getData()
     {
-        Object[][] data=new Object[10][10];
+        Object[][] data=new Object[5][10];
 
         data[0][0]="ussSSS";
         data[0][1]="pass11";
@@ -94,60 +94,6 @@ public class Test2 {
 
 
 
-        data[5][0]="1111";
-        data[5][1]="ЫЫЫ";
-        data[5][2]="uВФЫЦйы1  r1";
-        data[5][3]=" ы іsss";
-        data[5][4]="1 s";
-        data[5][5]="@! s1 1";
-        data[5][6]="urasd";
-        data[5][7]="asdasd";
-        data[5][8]="p@@@@";
-        data[5][9]=".....";
-
-        data[6][0]="urer1";
-        data[6][1]="pass";
-        data[6][2]="urer1";
-        data[6][3]="pass";
-        data[6][4]="urer1";
-        data[6][5]="pass";
-        data[6][6]="urer1";
-        data[6][7]="pass";
-        data[6][8]="pass";
-        data[6][9]="pass";
-
-        data[7][0]="11";
-        data[7][1]="pa3adsss";
-        data[7][2]="ur  er";
-        data[7][3]="pass;;;";
-        data[7][4]="ur1231er1";
-        data[7][5]="pasывыas ";
-        data[7][6]="ІІІ";
-        data[7][7]="2";
-        data[7][8]="@#@$@";
-        data[7][9]="psa";
-
-        data[8][0]="urasdaser1";
-        data[8][1]="pasasdass";
-        data[8][2]="ure1111r1";
-        data[8][3]="pa4656456ss";
-        data[8][4]="urer///1";
-        data[8][5]="pas,,,s";
-        data[8][6]="ur,,er1";
-        data[8][7]="pa    ss";
-        data[8][8]="paewress";
-        data[8][9]="pas sdfs1231s";
-
-        data[9][0]="u1312rer1";
-        data[9][1]="pas21 as";
-        data[9][2]="ureasd r1";
-        data[9][3]="p  asdass";
-        data[9][4]="urDDDer1";
-        data[9][5]="paad123ss";
-        data[9][6]="uredfsdfr1";
-        data[9][7]="pasas11s";
-        data[9][8]="pas as   s";
-        data[9][9]="pasd sdfss";
 
         return data;
     }
